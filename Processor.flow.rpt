@@ -1,0 +1,169 @@
+Flow report for Processor
+Tue Apr 02 22:45:04 2019
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; Flow Summary                                                             ;
++-------------------------------+------------------------------------------+
+; Flow Status                   ; Successful - Tue Apr 02 22:45:04 2019    ;
+; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name                 ; Processor                                ;
+; Top-level Entity Name         ; MainSchema                               ;
+; Family                        ; Stratix II                               ;
+; Met timing requirements       ; N/A                                      ;
+; Logic utilization             ; N/A                                      ;
+;     Combinational ALUTs       ; 2                                        ;
+;     Dedicated logic registers ; 2                                        ;
+; Total registers               ; 2                                        ;
+; Total pins                    ; 3                                        ;
+; Total virtual pins            ; 0                                        ;
+; Total block memory bits       ; 0                                        ;
+; DSP block 9-bit elements      ; 0                                        ;
+; Total PLLs                    ; 0                                        ;
+; Total DLLs                    ; 0                                        ;
++-------------------------------+------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/02/2019 22:45:02 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Processor           ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 206916448973356.155423430207160 ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_BUSTRI                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                      ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri0.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri0.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri0.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_decode0.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter0.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter1.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff1.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff1.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff1.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux1.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux1.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux1.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff2.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff2.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff2.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant0.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant0.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant0.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff3.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff3.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_dff3.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.inc                ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --            ; MainSchema  ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; MainSchema  ; Top            ;
+; TOP_LEVEL_ENTITY                   ; MainSchema                      ; Processor     ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 215 MB              ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                       ;
++----------------------+------------------+---------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++----------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis ; ≈‚„ÂÌËÈ-œ        ; Windows Vista ; 6.1        ; x86_64         ;
++----------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
+
+
+
