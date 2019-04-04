@@ -17,6 +17,7 @@ CONTROL_BUS[13] <= Processor:inst7.RAM_MEMENAB
 CONTROL_BUS[14] <= <GND>
 CONTROL_BUS[15] <= <GND>
 CLK => Processor:inst7.CLK
+Start => Processor:inst7.Start
 COMMAND_BUS[0] <= COMMAND_BUS~15.DB_MAX_OUTPUT_PORT_TYPE
 COMMAND_BUS[1] <= COMMAND_BUS~14.DB_MAX_OUTPUT_PORT_TYPE
 COMMAND_BUS[2] <= COMMAND_BUS~13.DB_MAX_OUTPUT_PORT_TYPE
@@ -104,9 +105,7 @@ IP[15] <= Processor:inst7.IP[15]
 
 |MainSchema|Processor:inst7
 ROM_INCLK <= LoadToCacheAlgorithm:inst.ROM_INCLK
-CLK => LoadToCacheAlgorithm:inst.CLK
-CLK => LoadFromRam:inst17.CLK
-CLK => inst4.IN0
+CLK => inst19.IN0
 Data[0] => gdfx_temp0[0].IN0
 Data[1] => gdfx_temp0[1].IN0
 Data[2] => gdfx_temp0[2].IN0
@@ -157,6 +156,7 @@ CommandData[14] => lpm_dff1:Command2.data[14]
 CommandData[14] => lpm_dff1:Command1.data[14]
 CommandData[15] => lpm_dff1:Command2.data[15]
 CommandData[15] => lpm_dff1:Command1.data[15]
+Start => inst24.IN1
 ROM_OUTCLK <= LoadToCacheAlgorithm:inst.ROM_OUTCLK
 ROM_OUTENAB <= LoadToCacheAlgorithm:inst.ROM_OUTENAB
 ROM_CACHE_CLK <= LoadToCacheAlgorithm:inst.ROM_CACHE_CLK
@@ -1185,6 +1185,81 @@ data[2][0] => and_node[0][2].IN0
 result[0] <= and_node[0][2].DB_MAX_OUTPUT_PORT_TYPE
 
 
+|MainSchema|Processor:inst7|lpm_counter10:inst20
+clock => lpm_counter:lpm_counter_component.clock
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+
+
+|MainSchema|Processor:inst7|lpm_counter10:inst20|lpm_counter:lpm_counter_component
+clock => cntr_nlh:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_nlh:auto_generated.q[0]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|MainSchema|Processor:inst7|lpm_counter10:inst20|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+
+
+|MainSchema|Processor:inst7|lpm_and15:inst23
+data[0][0] => lpm_and:lpm_and_component.data[0][0]
+data[1][0] => lpm_and:lpm_and_component.data[1][0]
+data[2][0] => lpm_and:lpm_and_component.data[2][0]
+data[3][0] => lpm_and:lpm_and_component.data[3][0]
+result <= lpm_and:lpm_and_component.result[0]
+
+
+|MainSchema|Processor:inst7|lpm_and15:inst23|lpm_and:lpm_and_component
+data[0][0] => and_node[0][1].IN1
+data[1][0] => and_node[0][1].IN0
+data[2][0] => and_node[0][2].IN0
+data[3][0] => and_node[0][3].IN0
+result[0] <= and_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MainSchema|Processor:inst7|lpm_inv9:inst21
+data[0] => lpm_inv:lpm_inv_component.data[0]
+data[1] => lpm_inv:lpm_inv_component.data[1]
+data[2] => lpm_inv:lpm_inv_component.data[2]
+data[3] => lpm_inv:lpm_inv_component.data[3]
+result[0] <= lpm_inv:lpm_inv_component.result[0]
+result[1] <= lpm_inv:lpm_inv_component.result[1]
+result[2] <= lpm_inv:lpm_inv_component.result[2]
+result[3] <= lpm_inv:lpm_inv_component.result[3]
+
+
+|MainSchema|Processor:inst7|lpm_inv9:inst21|lpm_inv:lpm_inv_component
+
+
 |MainSchema|Processor:inst7|lpm_dff1:Command1
 clock => lpm_ff:lpm_ff_component.clock
 data[0] => lpm_ff:lpm_ff_component.data[0]
@@ -1345,21 +1420,25 @@ RamCacheReadEnable <= LoadToDataReg:inst15.RamCacheReadEnable
 Command[0] => LoadToDataReg:inst15.Command[0]
 Command[0] => lpm_compare3:inst19.dataa[0]
 Command[0] => lpm_compare6:inst5.dataa[0]
+Command[0] => lpm_or0:inst22.data[0][0]
 Command[0] => SelectIP:inst14.Command[0]
 Command[0] => lpm_compare5:inst1.dataa[0]
 Command[1] => LoadToDataReg:inst15.Command[1]
 Command[1] => lpm_compare3:inst19.dataa[1]
 Command[1] => lpm_compare6:inst5.dataa[1]
+Command[1] => lpm_or0:inst22.data[1][0]
 Command[1] => SelectIP:inst14.Command[1]
 Command[1] => lpm_compare5:inst1.dataa[1]
 Command[2] => LoadToDataReg:inst15.Command[2]
 Command[2] => lpm_compare3:inst19.dataa[2]
 Command[2] => lpm_compare6:inst5.dataa[2]
+Command[2] => lpm_or0:inst22.data[2][0]
 Command[2] => SelectIP:inst14.Command[2]
 Command[2] => lpm_compare5:inst1.dataa[2]
 Command[3] => LoadToDataReg:inst15.Command[3]
 Command[3] => lpm_compare3:inst19.dataa[3]
 Command[3] => lpm_compare6:inst5.dataa[3]
+Command[3] => lpm_or0:inst22.data[3][0]
 Command[3] => SelectIP:inst14.Command[3]
 Command[3] => lpm_compare5:inst1.dataa[3]
 MemAddr[0] => LoadToDataReg:inst15.MemAddr[0]
@@ -3563,21 +3642,25 @@ Command[0] => lpm_compare3:inst20.dataa[0]
 Command[0] => lpm_compare3:inst18.dataa[0]
 Command[0] => lpm_compare3:inst16.dataa[0]
 Command[0] => lpm_compare3:inst17.dataa[0]
+Command[0] => lpm_compare3:inst21.dataa[0]
 Command[1] => lpm_compare3:inst20.dataa[1]
 Command[1] => lpm_compare3:inst18.dataa[1]
 Command[1] => lpm_compare3:inst16.dataa[1]
 Command[1] => lpm_compare3:inst17.dataa[1]
 Command[1] => lpm_compare2:inst3.dataa[0]
+Command[1] => lpm_compare3:inst21.dataa[1]
 Command[2] => lpm_compare3:inst20.dataa[2]
 Command[2] => lpm_compare3:inst18.dataa[2]
 Command[2] => lpm_compare3:inst16.dataa[2]
 Command[2] => lpm_compare3:inst17.dataa[2]
 Command[2] => lpm_compare2:inst3.dataa[1]
+Command[2] => lpm_compare3:inst21.dataa[2]
 Command[3] => lpm_compare3:inst20.dataa[3]
 Command[3] => lpm_compare3:inst18.dataa[3]
 Command[3] => lpm_compare3:inst16.dataa[3]
 Command[3] => lpm_compare3:inst17.dataa[3]
 Command[3] => lpm_compare2:inst3.dataa[2]
+Command[3] => lpm_compare3:inst21.dataa[3]
 Fifth => inst2.IN1
 Fifth => inst15.IN0
 Fifth => lpm_and7:inst9.data0
@@ -3857,6 +3940,56 @@ result[2] <= lpm_constant:lpm_constant_component.result[2]
 result[0] <= <GND>
 result[1] <= <VCC>
 result[2] <= <VCC>
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+datab[0] => lpm_compare:lpm_compare_component.datab[0]
+datab[1] => lpm_compare:lpm_compare_component.datab[1]
+datab[2] => lpm_compare:lpm_compare_component.datab[2]
+datab[3] => lpm_compare:lpm_compare_component.datab[3]
+aeb <= lpm_compare:lpm_compare_component.aeb
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21|lpm_compare:lpm_compare_component
+dataa[0] => cmpr_big:auto_generated.dataa[0]
+dataa[1] => cmpr_big:auto_generated.dataa[1]
+dataa[2] => cmpr_big:auto_generated.dataa[2]
+dataa[3] => cmpr_big:auto_generated.dataa[3]
+datab[0] => cmpr_big:auto_generated.datab[0]
+datab[1] => cmpr_big:auto_generated.datab[1]
+datab[2] => cmpr_big:auto_generated.datab[2]
+datab[3] => cmpr_big:auto_generated.datab[3]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= <GND>
+aeb <= cmpr_big:auto_generated.aeb
+agb <= <GND>
+aleb <= <GND>
+aneb <= <GND>
+ageb <= <GND>
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
+aeb <= eq_wire.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_constant49:inst1
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+result[1] <= lpm_constant:lpm_constant_component.result[1]
+result[2] <= lpm_constant:lpm_constant_component.result[2]
+result[3] <= lpm_constant:lpm_constant_component.result[3]
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_constant49:inst1|lpm_constant:lpm_constant_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
 
 
 |MainSchema|Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectALUFunction:inst5
@@ -4843,6 +4976,22 @@ result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <GND>
 result[3] <= <GND>
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|lpm_or0:inst22
+data[0][0] => lpm_or:lpm_or_component.data[0][0]
+data[1][0] => lpm_or:lpm_or_component.data[1][0]
+data[2][0] => lpm_or:lpm_or_component.data[2][0]
+data[3][0] => lpm_or:lpm_or_component.data[3][0]
+result <= lpm_or:lpm_or_component.result[0]
+
+
+|MainSchema|Processor:inst7|LoadFromRam:inst17|lpm_or0:inst22|lpm_or:lpm_or_component
+data[0][0] => or_node[0][1].IN1
+data[1][0] => or_node[0][1].IN0
+data[2][0] => or_node[0][2].IN0
+data[3][0] => or_node[0][3].IN0
+result[0] <= or_node[0][3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MainSchema|Processor:inst7|LoadFromRam:inst17|lpm_bustri1:inst12

@@ -762,3 +762,6 @@ set_global_assignment -name QIP_FILE lpm_counter16.qip
 set_global_assignment -name BDF_FILE StackEnable.bdf
 set_global_assignment -name QIP_FILE lpm_constant47.qip
 set_global_assignment -name QIP_FILE lpm_constant48.qip
+set_global_assignment -name QIP_FILE lpm_inv9.qip
+set_global_assignment -name QIP_FILE lpm_and15.qip
+set_global_assignment -name QIP_FILE lpm_constant49.qip

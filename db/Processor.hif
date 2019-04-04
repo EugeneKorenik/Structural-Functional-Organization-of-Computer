@@ -19,26 +19,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-MainSchema
-# storage
-db|Processor.(0).cnf
-db|Processor.(0).cnf
-# case_insensitive
-# source_file
-MainSchema.bdf
-e699b056b62e9e7badcd258d3a1f47
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 lpm_and2
 # storage
 db|Processor.(3).cnf
@@ -3680,6 +3660,7 @@ Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst18
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst16
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst17
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst17
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst18
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst28
@@ -3824,6 +3805,7 @@ Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst18|lpm_compare:lpm_compare_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst16|lpm_compare:lpm_compare_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst17|lpm_compare:lpm_compare_component
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21|lpm_compare:lpm_compare_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst17|lpm_compare:lpm_compare_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst18|lpm_compare:lpm_compare_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst28|lpm_compare:lpm_compare_component
@@ -3898,6 +3880,7 @@ Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst18|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst16|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst17|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_compare3:inst21|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst17|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst18|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_compare3:inst28|lpm_compare:lpm_compare_component|cmpr_big:auto_generated
@@ -6013,6 +5996,7 @@ data0_0
 # hierarchies {
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|GPRReadEnable:inst7|lpm_or5:inst18|lpm_or:lpm_or_component
 Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|SelectGRAddress:inst9|lpm_or5:inst7|lpm_or:lpm_or_component
+Processor:inst7|LoadFromRam:inst17|lpm_or0:inst22|lpm_or:lpm_or_component
 }
 # macro_sequence
 
@@ -20427,6 +20411,7 @@ data0_0
 99832fdf63412df51d7531202d74e75
 }
 # hierarchies {
+Processor:inst7|lpm_and15:inst23|lpm_and:lpm_and_component
 Cache:inst6|Line:inst3|Where_Write:inst5|lpm_and12:inst4|lpm_and:lpm_and_component
 Cache:inst6|Line:inst3|Where_Write:inst5|lpm_and13:inst5|lpm_and:lpm_and_component
 Cache:inst6|Line:inst|Where_Write:inst5|lpm_and12:inst4|lpm_and:lpm_and_component
@@ -20535,6 +20520,7 @@ data0
 3
 }
 # hierarchies {
+Processor:inst7|lpm_inv9:inst21|lpm_inv:lpm_inv_component
 Cache:inst6|Line:inst3|Where_Write:inst5|lpm_inv0:inst28|lpm_inv:lpm_inv_component
 Cache:inst6|Line:inst3|Where_Write:inst5|lpm_inv0:inst19|lpm_inv:lpm_inv_component
 Cache:inst6|Line:inst|Where_Write:inst5|lpm_inv0:inst28|lpm_inv:lpm_inv_component
@@ -21886,10 +21872,617 @@ lpm_ram_io:inst|altram:sram|altsyncram:ram_block
 
 # end
 # entity
-altsyncram_lg91
+decode_rqa
+# storage
+db|Processor.(239).cnf
+db|Processor.(239).cnf
+# case_insensitive
+# source_file
+db|decode_rqa.tdf
+f413124b3f655998c3ed9011577e4
+7
+# used_port {
+eq9
+-1
+3
+eq8
+-1
+3
+eq7
+-1
+3
+eq6
+-1
+3
+eq5
+-1
+3
+eq4
+-1
+3
+eq3
+-1
+3
+eq2
+-1
+3
+eq15
+-1
+3
+eq14
+-1
+3
+eq13
+-1
+3
+eq12
+-1
+3
+eq11
+-1
+3
+eq10
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+enable
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_lg91:auto_generated|decode_rqa:decode3
+}
+# macro_sequence
+
+# end
+# entity
+INC_AGE
+# storage
+db|Processor.(230).cnf
+db|Processor.(230).cnf
+# case_insensitive
+# source_file
+INC_AGE.bdf
+de66c5d9af77789e7e65af43a732f51e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Cache:inst6|Line:inst3|INC_AGE:inst6
+Cache:inst6|Line:inst|INC_AGE:inst6
+Cache:inst5|Line:inst3|INC_AGE:inst6
+Cache:inst5|Line:inst|INC_AGE:inst6
+}
+# macro_sequence
+
+# end
+# entity
+ClockEnableForLoadFromRam
+# storage
+db|Processor.(101).cnf
+db|Processor.(101).cnf
+# case_insensitive
+# source_file
+ClockEnableForLoadFromRam.bdf
+d96cea8adf76fd885dfb629ccefea44
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|ClockEnableForLoadFromRam:inst
+}
+# macro_sequence
+
+# end
+# entity
+LoadToCacheAlgorithm
+# storage
+db|Processor.(2).cnf
+db|Processor.(2).cnf
+# case_insensitive
+# source_file
+LoadToCacheAlgorithm.bdf
+0e4feee28ea82e8a66f33d2f60816c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Processor:inst7|LoadToCacheAlgorithm:inst
+}
+# macro_sequence
+
+# end
+# entity
+GPRReadEnable
+# storage
+db|Processor.(68).cnf
+db|Processor.(68).cnf
+# case_insensitive
+# source_file
+GPRReadEnable.bdf
+ee6fed7fc624bb12b125a4736ca34bee
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|GPRReadEnable:inst7
+}
+# macro_sequence
+
+# end
+# entity
+Stack
+# storage
+db|Processor.(153).cnf
+db|Processor.(153).cnf
+# case_insensitive
+# source_file
+Stack.bdf
+10fa9f737366f69dedcdf67ac846aefa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Processor:inst7|Stack:inst10
+}
+# macro_sequence
+
+# end
+# entity
+MainSchema
+# storage
+db|Processor.(0).cnf
+db|Processor.(0).cnf
+# case_insensitive
+# source_file
+MainSchema.bdf
+bf9a9692b0367d287e5d88762903648
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Processor
+# storage
+db|Processor.(1).cnf
+db|Processor.(1).cnf
+# case_insensitive
+# source_file
+Processor.bdf
+fcaf456669caeccbefea2f93e140d2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Processor:inst7
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter10
+# storage
+db|Processor.(200).cnf
+db|Processor.(200).cnf
+# case_insensitive
+# source_file
+lpm_counter10.tdf
+31717a9d3dd8606cf9298e1d491a52e
+7
+# used_port {
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_counter.inc
+7f888b135ddf66f0653c44cb18ac5
+}
+# hierarchies {
+Processor:inst7|lpm_counter10:inst20
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
 # storage
 db|Processor.(238).cnf
 db|Processor.(238).cnf
+# case_insensitive
+# source_file
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_counter.tdf
+775da77f476c58b7ddeb65edee82b5
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Stratix II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_nlh
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|alt_counter_stratix.inc
+2251b94d26afaa53635df1aff6b6e7be
+..|..|altera|quartus|quartus|libraries|megafunctions|dffeea.inc
+55d29d20f7e852c37746bec4e2495ec
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+..|..|altera|quartus|quartus|libraries|megafunctions|alt_synch_counter.inc
+09966d10c3e95c888bf8e443df34d8
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+..|..|altera|quartus|quartus|libraries|megafunctions|alt_synch_counter_f.inc
+93a5aae1d8bd19c9e8e8eef93ab2177d
+..|..|altera|quartus|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_counter.inc
+7f888b135ddf66f0653c44cb18ac5
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_add_sub.inc
+7d9a33dd39f13aa690c3d0edd88351
+..|..|altera|quartus|quartus|libraries|megafunctions|alt_counter_f10ke.inc
+536f8da8218b4a93689416f9baea1880
+..|..|altera|quartus|quartus|libraries|megafunctions|cmpconst.inc
+e61874547688138e6fc0b49ff8760
+}
+# hierarchies {
+Processor:inst7|lpm_counter10:inst20|lpm_counter:lpm_counter_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_nlh
+# storage
+db|Processor.(240).cnf
+db|Processor.(240).cnf
+# case_insensitive
+# source_file
+db|cntr_nlh.tdf
+231a5a27f35f2fcdfd66181e62258e66
+7
+# used_port {
+q0
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+Processor:inst7|lpm_counter10:inst20|lpm_counter:lpm_counter_component|cntr_nlh:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_and15
+# storage
+db|Processor.(241).cnf
+db|Processor.(241).cnf
+# case_insensitive
+# source_file
+lpm_and15.tdf
+2756dbabc7bdf154ba995e7b1a3cdf1
+7
+# used_port {
+result
+-1
+3
+data3_0
+-1
+3
+data2_0
+-1
+3
+data1_0
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_and.inc
+102399e8b09987545b13639f1595ab7
+}
+# hierarchies {
+Processor:inst7|lpm_and15:inst23
+}
+# macro_sequence
+
+# end
+# entity
+lpm_inv9
+# storage
+db|Processor.(242).cnf
+db|Processor.(242).cnf
+# case_insensitive
+# source_file
+lpm_inv9.tdf
+ff1b87d7727423f561ba0ba1f246889
+7
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_inv.inc
+b5d1bb266a57bccadff8f379b6ebfca
+}
+# hierarchies {
+Processor:inst7|lpm_inv9:inst21
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_hd51
+# storage
+db|Processor.(243).cnf
+db|Processor.(243).cnf
+# case_insensitive
+# source_file
+db|altsyncram_hd51.tdf
+bf81df7e49bc997af376fda283ab54
+7
+# used_port {
+q_a9
+-1
+3
+q_a8
+-1
+3
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a15
+-1
+3
+q_a14
+-1
+3
+q_a13
+-1
+3
+q_a12
+-1
+3
+q_a11
+-1
+3
+q_a10
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock1
+-1
+3
+clock0
+-1
+3
+address_a9
+-1
+3
+address_a8
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a15
+-1
+3
+address_a14
+-1
+3
+address_a13
+-1
+3
+address_a12
+-1
+3
+address_a11
+-1
+3
+address_a10
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+rom.hex
+efedb2c4efb3d668d0af66aace4c93
+}
+# hierarchies {
+lpm_rom1:inst1|altsyncram:altsyncram_component|altsyncram_hd51:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_lg91
+# storage
+db|Processor.(244).cnf
+db|Processor.(244).cnf
 # case_insensitive
 # source_file
 db|altsyncram_lg91.tdf
@@ -22052,154 +22645,10 @@ address_a0
 }
 # memory_file {
 ram.hex
-99192ac2a45181edebbd883a52dd42
+b69399fe983bf72cf75fe6c69a651
 }
 # hierarchies {
 lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_lg91:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-decode_rqa
-# storage
-db|Processor.(239).cnf
-db|Processor.(239).cnf
-# case_insensitive
-# source_file
-db|decode_rqa.tdf
-f413124b3f655998c3ed9011577e4
-7
-# used_port {
-eq9
--1
-3
-eq8
--1
-3
-eq7
--1
-3
-eq6
--1
-3
-eq5
--1
-3
-eq4
--1
-3
-eq3
--1
-3
-eq2
--1
-3
-eq15
--1
-3
-eq14
--1
-3
-eq13
--1
-3
-eq12
--1
-3
-eq11
--1
-3
-eq10
--1
-3
-eq1
--1
-3
-eq0
--1
-3
-enable
--1
-3
-data3
--1
-3
-data2
--1
-3
-data1
--1
-3
-data0
--1
-3
-}
-# hierarchies {
-lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_lg91:auto_generated|decode_rqa:decode3
-}
-# macro_sequence
-
-# end
-# entity
-INC_AGE
-# storage
-db|Processor.(230).cnf
-db|Processor.(230).cnf
-# case_insensitive
-# source_file
-INC_AGE.bdf
-de66c5d9af77789e7e65af43a732f51e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Cache:inst6|Line:inst3|INC_AGE:inst6
-Cache:inst6|Line:inst|INC_AGE:inst6
-Cache:inst5|Line:inst3|INC_AGE:inst6
-Cache:inst5|Line:inst|INC_AGE:inst6
-}
-# macro_sequence
-
-# end
-# entity
-ClockEnableForLoadFromRam
-# storage
-db|Processor.(101).cnf
-db|Processor.(101).cnf
-# case_insensitive
-# source_file
-ClockEnableForLoadFromRam.bdf
-d96cea8adf76fd885dfb629ccefea44
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|ClockEnableForLoadFromRam:inst
-}
-# macro_sequence
-
-# end
-# entity
-LoadToCacheAlgorithm
-# storage
-db|Processor.(2).cnf
-db|Processor.(2).cnf
-# case_insensitive
-# source_file
-LoadToCacheAlgorithm.bdf
-0e4feee28ea82e8a66f33d2f60816c
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Processor:inst7|LoadToCacheAlgorithm:inst
 }
 # macro_sequence
 
@@ -22212,7 +22661,7 @@ db|Processor.(123).cnf
 # case_insensitive
 # source_file
 WriteEnableBlock.bdf
-e34190ecd815a85a4c90cbd55d9dafc
+82f92b3e35d11f3f287daabeec8407d
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -22225,21 +22674,83 @@ Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15
 
 # end
 # entity
-Processor
+lpm_constant49
 # storage
-db|Processor.(1).cnf
-db|Processor.(1).cnf
+db|Processor.(245).cnf
+db|Processor.(245).cnf
 # case_insensitive
 # source_file
-Processor.bdf
-4d7077278e393c47503d625cb9d4d45
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+lpm_constant49.tdf
+c654391d87ece6c39f6b76dde2b5ef
+7
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
 }
 # hierarchies {
-Processor:inst7
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_constant49:inst1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|Processor.(246).cnf
+db|Processor.(246).cnf
+# case_insensitive
+# source_file
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_constant.tdf
+1deaa8dab8c967886ca949d46599ab72
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+0
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_pe6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|WriteEnableBlock:inst15|lpm_constant49:inst1|lpm_constant:lpm_constant_component
 }
 # macro_sequence
 
@@ -22252,7 +22763,7 @@ db|Processor.(50).cnf
 # case_insensitive
 # source_file
 LoadFromRam.bdf
-29aa49dfcfcae1e36c6949a97e4eb0fe
+9924a7fb7666344456eac9fc2ecf9e
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -22265,165 +22776,38 @@ Processor:inst7|LoadFromRam:inst17
 
 # end
 # entity
-altsyncram_hd51
+lpm_or0
 # storage
-db|Processor.(200).cnf
-db|Processor.(200).cnf
+db|Processor.(247).cnf
+db|Processor.(247).cnf
 # case_insensitive
 # source_file
-db|altsyncram_hd51.tdf
-bf81df7e49bc997af376fda283ab54
+lpm_or0.tdf
+7511b2d939cbadbe485f8b9a589541e3
 7
 # used_port {
-q_a9
+result
 -1
 3
-q_a8
+data3_0
 -1
 3
-q_a7
+data2_0
 -1
 3
-q_a6
+data1_0
 -1
 3
-q_a5
--1
-3
-q_a4
--1
-3
-q_a3
--1
-3
-q_a2
--1
-3
-q_a15
--1
-3
-q_a14
--1
-3
-q_a13
--1
-3
-q_a12
--1
-3
-q_a11
--1
-3
-q_a10
--1
-3
-q_a1
--1
-3
-q_a0
--1
-3
-clock1
--1
-3
-clock0
--1
-3
-address_a9
--1
-3
-address_a8
--1
-3
-address_a7
--1
-3
-address_a6
--1
-3
-address_a5
--1
-3
-address_a4
--1
-3
-address_a3
--1
-3
-address_a2
--1
-3
-address_a15
--1
-3
-address_a14
--1
-3
-address_a13
--1
-3
-address_a12
--1
-3
-address_a11
--1
-3
-address_a10
--1
-3
-address_a1
--1
-3
-address_a0
+data0_0
 -1
 3
 }
-# memory_file {
-rom.hex
-24dc4ff4cedbad37d782d7724f3532e5
+# include_file {
+..|..|altera|quartus|quartus|libraries|megafunctions|lpm_or.inc
+f8b45f4acdfceed3ae78eeec816f3d
 }
 # hierarchies {
-lpm_rom1:inst1|altsyncram:altsyncram_component|altsyncram_hd51:auto_generated
-}
-# macro_sequence
-
-# end
-# entity
-GPRReadEnable
-# storage
-db|Processor.(68).cnf
-db|Processor.(68).cnf
-# case_insensitive
-# source_file
-GPRReadEnable.bdf
-ee6fed7fc624bb12b125a4736ca34bee
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Processor:inst7|LoadFromRam:inst17|LoadToDataReg:inst15|GPRReadEnable:inst7
-}
-# macro_sequence
-
-# end
-# entity
-Stack
-# storage
-db|Processor.(153).cnf
-db|Processor.(153).cnf
-# case_insensitive
-# source_file
-Stack.bdf
-10fa9f737366f69dedcdf67ac846aefa
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-Processor:inst7|Stack:inst10
+Processor:inst7|LoadFromRam:inst17|lpm_or0:inst22
 }
 # macro_sequence
 

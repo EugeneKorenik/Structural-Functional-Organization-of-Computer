@@ -1,5 +1,5 @@
 Flow report for Processor
-Fri Apr 05 15:57:36 2019
+Thu Apr 04 18:15:11 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Successful - Fri Apr 05 15:57:35 2019    ;
+; Flow Status                   ; Successful - Thu Apr 04 18:15:11 2019    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; Processor                                ;
 ; Top-level Entity Name         ; MainSchema                               ;
 ; Family                        ; Stratix II                               ;
 ; Met timing requirements       ; N/A                                      ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 1,928                                    ;
-;     Dedicated logic registers ; 2,923                                    ;
-; Total registers               ; 2923                                     ;
-; Total pins                    ; 101                                      ;
+;     Combinational ALUTs       ; 1,933                                    ;
+;     Dedicated logic registers ; 2,924                                    ;
+; Total registers               ; 2924                                     ;
+; Total pins                    ; 102                                      ;
 ; Total virtual pins            ; 0                                        ;
 ; Total block memory bits       ; 2,097,152                                ;
 ; DSP block 9-bit elements      ; 0                                        ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2019 15:56:29 ;
+; Start date & time ; 04/04/2019 18:14:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 206916448973356.155446898806552 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 206916448973356.155439084308704 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
@@ -252,6 +252,12 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_INV                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_AND                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
@@ -965,6 +971,15 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_constant48.tdf              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant48.bsf              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_constant48.inc              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv9.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv9.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv9.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and15.tdf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and15.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and15.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant49.tdf              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant49.bsf              ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant49.inc              ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; MainSchema  ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; MainSchema  ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; MainSchema                      ; Processor     ; --          ; --             ;
@@ -977,8 +992,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:04     ; 1.0                     ; 288 MB              ; 00:01:03                           ;
-; Total                ; 00:01:04     ; --                      ; --                  ; 00:01:03                           ;
+; Analysis & Synthesis ; 00:01:03     ; 1.0                     ; 289 MB              ; 00:01:03                           ;
+; Total                ; 00:01:03     ; --                      ; --                  ; 00:01:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
