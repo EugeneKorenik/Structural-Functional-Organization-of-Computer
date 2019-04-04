@@ -19,5 +19,5 @@ FUNCTION lpm_counter4
 )
 
 RETURNS (
-	q[14..0]
+	q[15..0]
 );

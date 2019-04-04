@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 280 272)
+	(text "SelectDataAndGPRAddress" (rect 5 0 164 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Command[3..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "Command[3..0]" (rect 21 27 104 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Loaded" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "Loaded" (rect 21 43 63 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 59 44 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "GPR_AddressSel" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "GPR_AddressSel" (rect 144 27 243 41)(font "Arial" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 1))
+	)
+	(port
+		(pt 264 48)
+		(output)
+		(text "DataSelect" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "DataSelect" (rect 182 43 243 57)(font "Arial" (font_size 8)))
+		(line (pt 264 48)(pt 248 48)(line_width 1))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "RamInclk" (rect 0 0 49 14)(font "Arial" (font_size 8)))
+		(text "RamInclk" (rect 194 59 243 73)(font "Arial" (font_size 8)))
+		(line (pt 264 64)(pt 248 64)(line_width 1))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "RamWriteEnable" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "RamWriteEnable" (rect 151 75 243 89)(font "Arial" (font_size 8)))
+		(line (pt 264 80)(pt 248 80)(line_width 1))
+	)
+	(port
+		(pt 264 96)
+		(output)
+		(text "RamMemenab" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "RamMemenab" (rect 164 91 243 105)(font "Arial" (font_size 8)))
+		(line (pt 264 96)(pt 248 96)(line_width 1))
+	)
+	(port
+		(pt 264 112)
+		(output)
+		(text "RamCacheClk" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "RamCacheClk" (rect 166 107 243 121)(font "Arial" (font_size 8)))
+		(line (pt 264 112)(pt 248 112)(line_width 1))
+	)
+	(port
+		(pt 264 128)
+		(output)
+		(text "RamCacheWriteEnable" (rect 0 0 128 14)(font "Arial" (font_size 8)))
+		(text "RamCacheWriteEnable" (rect 115 123 243 137)(font "Arial" (font_size 8)))
+		(line (pt 264 128)(pt 248 128)(line_width 1))
+	)
+	(port
+		(pt 264 144)
+		(output)
+		(text "GPRWriteEnable" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "GPRWriteEnable" (rect 151 139 243 153)(font "Arial" (font_size 8)))
+		(line (pt 264 144)(pt 248 144)(line_width 1))
+	)
+	(port
+		(pt 264 160)
+		(output)
+		(text "GPRClk" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "GPRClk" (rect 202 155 243 169)(font "Arial" (font_size 8)))
+		(line (pt 264 160)(pt 248 160)(line_width 1))
+	)
+	(port
+		(pt 264 176)
+		(output)
+		(text "StackClk" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "StackClk" (rect 195 171 243 185)(font "Arial" (font_size 8)))
+		(line (pt 264 176)(pt 248 176)(line_width 1))
+	)
+	(port
+		(pt 264 192)
+		(output)
+		(text "SetIP" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "SetIP" (rect 215 187 243 201)(font "Arial" (font_size 8)))
+		(line (pt 264 192)(pt 248 192)(line_width 1))
+	)
+	(port
+		(pt 264 208)
+		(output)
+		(text "ClearCounters" (rect 0 0 81 14)(font "Arial" (font_size 8)))
+		(text "ClearCounters" (rect 162 203 243 217)(font "Arial" (font_size 8)))
+		(line (pt 264 208)(pt 248 208)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 240)(line_width 1))
+	)
+)

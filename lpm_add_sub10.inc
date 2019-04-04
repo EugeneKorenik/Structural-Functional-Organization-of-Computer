@@ -15,9 +15,9 @@
 
 FUNCTION lpm_add_sub10 
 (
-	dataa[9..0]
+	dataa[10..0]
 )
 
 RETURNS (
-	result[9..0]
+	result[10..0]
 );

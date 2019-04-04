@@ -15,7 +15,7 @@
 
 FUNCTION lpm_rom1 
 (
-	address[14..0],
+	address[15..0],
 	inclock,
 	outclock
 )

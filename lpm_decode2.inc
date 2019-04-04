@@ -15,12 +15,16 @@
 
 FUNCTION lpm_decode2 
 (
-	data[1..0]
+	aclr,
+	clock,
+	data[2..0]
 )
 
 RETURNS (
 	eq0,
 	eq1,
 	eq2,
-	eq3
+	eq3,
+	eq4,
+	eq5
 );

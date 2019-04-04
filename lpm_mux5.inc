@@ -17,9 +17,7 @@ FUNCTION lpm_mux5
 (
 	data0,
 	data1,
-	data2,
-	data3,
-	sel[1..0]
+	sel
 )
 
 RETURNS (

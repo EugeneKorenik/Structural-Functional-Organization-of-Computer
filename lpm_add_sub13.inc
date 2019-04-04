@@ -15,10 +15,10 @@
 
 FUNCTION lpm_add_sub13 
 (
-	dataa[14..0],
-	datab[14..0]
+	dataa[15..0],
+	datab[15..0]
 )
 
 RETURNS (
-	result[14..0]
+	result[15..0]
 );

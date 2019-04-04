@@ -320,31 +320,6 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 912 0 1144 112))
 )
-(symbol
-	(rect 504 352 552 384)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst5" (rect 3 21 26 33)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16)(line_width 1))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16)(line_width 1))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7)(line_width 1))
-		(line (pt 13 7)(pt 31 16)(line_width 1))
-		(line (pt 13 25)(pt 31 16)(line_width 1))
-		(circle (rect 31 12 39 20)(line_width 1))
-	)
-)
 (connector
 	(pt 208 144)
 	(pt 296 144)
@@ -447,14 +422,6 @@ applicable agreement for further details.
 	(pt 720 152)
 )
 (connector
-	(pt 720 152)
-	(pt 720 344)
-)
-(connector
-	(pt 784 168)
-	(pt 736 168)
-)
-(connector
 	(pt 736 368)
 	(pt 736 168)
 )
@@ -483,24 +450,29 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 504 368)
-	(pt 448 368)
-)
-(connector
-	(pt 448 368)
-	(pt 448 344)
-)
-(connector
 	(pt -48 344)
-	(pt 448 344)
+	(pt 720 344)
 )
 (connector
-	(pt 448 344)
+	(pt 720 152)
+	(pt 720 168)
+)
+(connector
+	(pt 720 168)
 	(pt 720 344)
+)
+(connector
+	(pt 720 168)
+	(pt 736 168)
+)
+(connector
+	(pt 736 168)
+	(pt 784 168)
 )
 (junction (pt 208 304))
 (junction (pt -48 280))
 (junction (pt -48 216))
 (junction (pt 768 216))
 (junction (pt 208 144))
-(junction (pt 448 344))
+(junction (pt 720 168))
+(junction (pt 736 168))

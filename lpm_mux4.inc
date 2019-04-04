@@ -17,9 +17,7 @@ FUNCTION lpm_mux4
 (
 	data0x[15..0],
 	data1x[15..0],
-	data2x[15..0],
-	data3x[15..0],
-	sel[1..0]
+	sel
 )
 
 RETURNS (

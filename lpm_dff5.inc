@@ -16,9 +16,9 @@
 FUNCTION lpm_dff5 
 (
 	clock,
-	data[9..0]
+	data[10..0]
 )
 
 RETURNS (
-	q[9..0]
+	q[10..0]
 );

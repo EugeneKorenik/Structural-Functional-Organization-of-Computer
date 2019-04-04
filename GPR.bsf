@@ -47,9 +47,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "EN_W" (rect 0 0 34 14)(font "Arial" (font_size 8)))
-		(text "EN_W" (rect 21 75 55 89)(font "Arial" (font_size 8)))
+		(text "EnableWrite" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "EnableWrite" (rect 21 75 88 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "EnableRead" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "EnableRead" (rect 21 91 88 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 240 32)

@@ -39,7 +39,7 @@ INCLUDE "lpm_clshift.inc";
 SUBDESIGN lpm_clshift0
 (
 	data[15..0]	 : INPUT;
-	distance	 : INPUT;
+	distance[3..0]	 : INPUT;
 	result[15..0]	 : OUTPUT;
 )
 
@@ -49,13 +49,13 @@ VARIABLE
 			LPM_SHIFTTYPE = "ARITHMETIC",
 			LPM_TYPE = "LPM_CLSHIFT",
 			LPM_WIDTH = 16,
-			LPM_WIDTHDIST = 1
+			LPM_WIDTHDIST = 4
 			);
 
 BEGIN
 
 	result[15..0] = lpm_clshift_component.result[15..0];
-	lpm_clshift_component.distance[0..0] = distance;
+	lpm_clshift_component.distance[3..0] = distance[3..0];
 	lpm_clshift_component.direction = VCC;
 	lpm_clshift_component.data[15..0] = data[15..0];
 END;
@@ -70,17 +70,17 @@ END;
 -- Retrieval info: PRIVATE: LPM_WIDTH NUMERIC "16"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: lpm_width_varies NUMERIC "0"
--- Retrieval info: PRIVATE: lpm_widthdist NUMERIC "1"
--- Retrieval info: PRIVATE: lpm_widthdist_style NUMERIC "0"
+-- Retrieval info: PRIVATE: lpm_widthdist NUMERIC "4"
+-- Retrieval info: PRIVATE: lpm_widthdist_style NUMERIC "1"
 -- Retrieval info: PRIVATE: port_direction NUMERIC "1"
 -- Retrieval info: CONSTANT: LPM_SHIFTTYPE STRING "ARITHMETIC"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_CLSHIFT"
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "16"
--- Retrieval info: CONSTANT: LPM_WIDTHDIST NUMERIC "1"
+-- Retrieval info: CONSTANT: LPM_WIDTHDIST NUMERIC "4"
 -- Retrieval info: USED_PORT: data 0 0 16 0 INPUT NODEFVAL data[15..0]
--- Retrieval info: USED_PORT: distance 0 0 0 0 INPUT NODEFVAL distance
+-- Retrieval info: USED_PORT: distance 0 0 4 0 INPUT NODEFVAL distance[3..0]
 -- Retrieval info: USED_PORT: result 0 0 16 0 OUTPUT NODEFVAL result[15..0]
--- Retrieval info: CONNECT: @distance 0 0 1 0 distance 0 0 0 0
+-- Retrieval info: CONNECT: @distance 0 0 4 0 distance 0 0 4 0
 -- Retrieval info: CONNECT: @data 0 0 16 0 data 0 0 16 0
 -- Retrieval info: CONNECT: result 0 0 16 0 @result 0 0 16 0
 -- Retrieval info: CONNECT: @direction 0 0 0 0 VCC 0 0 0 0

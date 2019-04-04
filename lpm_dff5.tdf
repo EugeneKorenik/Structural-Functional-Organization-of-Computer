@@ -39,8 +39,8 @@ INCLUDE "lpm_ff.inc";
 SUBDESIGN lpm_dff5
 (
 	clock	 : INPUT;
-	data[9..0]	 : INPUT;
-	q[9..0]	 : OUTPUT;
+	data[10..0]	 : INPUT;
+	q[10..0]	 : OUTPUT;
 )
 
 VARIABLE
@@ -48,14 +48,14 @@ VARIABLE
 	lpm_ff_component : lpm_ff WITH (
 			LPM_FFTYPE = "DFF",
 			LPM_TYPE = "LPM_FF",
-			LPM_WIDTH = 10
+			LPM_WIDTH = 11
 			);
 
 BEGIN
 
-	q[9..0] = lpm_ff_component.q[9..0];
+	q[10..0] = lpm_ff_component.q[10..0];
 	lpm_ff_component.clock = clock;
-	lpm_ff_component.data[9..0] = data[9..0];
+	lpm_ff_component.data[10..0] = data[10..0];
 END;
 
 
@@ -76,16 +76,16 @@ END;
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "10"
+-- Retrieval info: PRIVATE: nBit NUMERIC "11"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "10"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "11"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 10 0 INPUT NODEFVAL data[9..0]
--- Retrieval info: USED_PORT: q 0 0 10 0 OUTPUT NODEFVAL q[9..0]
+-- Retrieval info: USED_PORT: data 0 0 11 0 INPUT NODEFVAL data[10..0]
+-- Retrieval info: USED_PORT: q 0 0 11 0 OUTPUT NODEFVAL q[10..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 10 0 @q 0 0 10 0
--- Retrieval info: CONNECT: @data 0 0 10 0 data 0 0 10 0
+-- Retrieval info: CONNECT: q 0 0 11 0 @q 0 0 11 0
+-- Retrieval info: CONNECT: @data 0 0 11 0 data 0 0 11 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff5.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff5.inc TRUE

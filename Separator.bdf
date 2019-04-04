@@ -24,7 +24,7 @@ applicable agreement for further details.
 	(input)
 	(rect 304 128 480 144)
 	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
-	(text "ADDRESS[14..0]" (rect 5 0 89 12)(font "Arial" ))
+	(text "ADDRESS[15..0]" (rect 5 0 89 12)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 100 12)(pt 125 12)(line_width 1))
@@ -54,9 +54,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 696 160 872 176)
+	(rect 696 176 872 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "TAG[9..0]" (rect 90 0 137 12)(font "Arial" ))
+	(text "SET" (rect 90 0 110 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -70,9 +70,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 696 176 872 192)
+	(rect 696 160 872 176)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "SET[1..0]" (rect 90 0 136 12)(font "Arial" ))
+	(text "TAG[11..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8)(line_width 1))
@@ -106,26 +106,26 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "A[14..0]" (rect 576 205 588 243)(font "Arial" )(vertical))
-	(pt 592 184)
-	(pt 592 248)
-	(bus)
-)
-(connector
 	(pt 480 136)
 	(pt 592 136)
 	(bus)
 )
 (connector
-	(text "A[14..5]" (rect 610 152 648 164)(font "Arial" ))
-	(pt 592 168)
-	(pt 696 168)
+	(text "A[15..0]" (rect 576 205 588 243)(font "Arial" )(vertical))
+	(pt 592 184)
+	(pt 592 248)
 	(bus)
 )
 (connector
-	(text "A[4..3]" (rect 610 168 643 180)(font "Arial" ))
+	(text "A[3]" (rect 610 168 630 180)(font "Arial" ))
 	(pt 592 184)
 	(pt 696 184)
+	(bus)
+)
+(connector
+	(text "A[15..4]" (rect 610 152 648 164)(font "Arial" ))
+	(pt 592 168)
+	(pt 696 168)
 	(bus)
 )
 (junction (pt 592 152))

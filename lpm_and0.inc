@@ -15,7 +15,9 @@
 
 FUNCTION lpm_and0 
 (
-	data[1..0][0..0]
+	data0,
+	data1,
+	data2
 )
 
 RETURNS (
