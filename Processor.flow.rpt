@@ -1,5 +1,5 @@
 Flow report for Processor
-Tue Apr 02 22:45:04 2019
+Thu Apr 11 20:39:05 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Flow Summary                                                             ;
 +-------------------------------+------------------------------------------+
-; Flow Status                   ; Successful - Tue Apr 02 22:45:04 2019    ;
+; Flow Status                   ; Successful - Thu Apr 11 20:39:04 2019    ;
 ; Quartus II Version            ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                 ; Processor                                ;
 ; Top-level Entity Name         ; MainSchema                               ;
 ; Family                        ; Stratix II                               ;
 ; Met timing requirements       ; N/A                                      ;
 ; Logic utilization             ; N/A                                      ;
-;     Combinational ALUTs       ; 2                                        ;
-;     Dedicated logic registers ; 2                                        ;
-; Total registers               ; 2                                        ;
-; Total pins                    ; 3                                        ;
+;     Combinational ALUTs       ; 1,539                                    ;
+;     Dedicated logic registers ; 2,277                                    ;
+; Total registers               ; 2277                                     ;
+; Total pins                    ; 54                                       ;
 ; Total virtual pins            ; 0                                        ;
-; Total block memory bits       ; 0                                        ;
+; Total block memory bits       ; 524,288                                  ;
 ; DSP block 9-bit elements      ; 0                                        ;
 ; Total PLLs                    ; 0                                        ;
 ; Total DLLs                    ; 0                                        ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2019 22:45:02 ;
+; Start date & time ; 04/11/2019 20:38:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 206916448973356.155423430207160 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 206916448973356.155500429601928 ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_BUSTRI                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                      ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
@@ -86,6 +86,34 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_FF                          ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_AND                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_INV                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_CONSTANT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COMPARE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_AND                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ROM                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_AND                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_BUSTRI                      ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.0                             ; --            ; --          ; --             ;
@@ -134,6 +162,48 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_add_sub0.tdf                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_add_sub0.bsf                ; --            ; --          ; --             ;
 ; MISC_FILE                          ; lpm_add_sub0.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_inv0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux2.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux2.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux2.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant1.tdf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant1.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_constant1.inc               ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_compare0.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux3.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux3.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux3.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and1.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and1.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and1.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom0.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom0.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom0.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_counter2.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.tdf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.inc                ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and2.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and2.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_and2.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux4.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux4.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux4.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux5.tdf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux5.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_mux5.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri1.tdf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri1.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_bustri1.inc                 ; --            ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --            ; MainSchema  ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --            ; MainSchema  ; Top            ;
 ; TOP_LEVEL_ENTITY                   ; MainSchema                      ; Processor     ; --          ; --             ;
@@ -146,8 +216,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 215 MB              ; 00:00:02                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:45     ; 1.0                     ; 257 MB              ; 00:00:40                           ;
+; Total                ; 00:00:45     ; --                      ; --                  ; 00:00:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
