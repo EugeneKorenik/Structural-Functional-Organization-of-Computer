@@ -54,9 +54,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 48 24 216 40)
+	(rect 48 56 216 72)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "OFFSET[2..0]" (rect 5 0 73 12)(font "Arial" ))
+	(text "TAG[9..0]" (rect 5 0 52 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -70,9 +70,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 48 56 216 72)
+	(rect 48 24 216 40)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "TAG[9..0]" (rect 5 0 52 12)(font "Arial" ))
+	(text "OFFSET[2..0]" (rect 5 0 73 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12)(line_width 1))
@@ -956,11 +956,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 712 32)
-	(pt 776 32)
-	(bus)
-)
-(connector
 	(pt 728 -16)
 	(pt 216 -16)
 	(bus)
@@ -1067,21 +1062,6 @@ applicable agreement for further details.
 (connector
 	(pt 352 392)
 	(pt 272 392)
-	(bus)
-)
-(connector
-	(pt 272 392)
-	(pt 272 32)
-	(bus)
-)
-(connector
-	(pt 216 32)
-	(pt 272 32)
-	(bus)
-)
-(connector
-	(pt 272 32)
-	(pt 712 32)
 	(bus)
 )
 (connector
@@ -1253,6 +1233,26 @@ applicable agreement for further details.
 	(pt 664 64)
 	(bus)
 )
+(connector
+	(pt 712 32)
+	(pt 776 32)
+	(bus)
+)
+(connector
+	(pt 272 32)
+	(pt 272 392)
+	(bus)
+)
+(connector
+	(pt 216 32)
+	(pt 272 32)
+	(bus)
+)
+(connector
+	(pt 272 32)
+	(pt 712 32)
+	(bus)
+)
 (junction (pt 728 168))
 (junction (pt 728 320))
 (junction (pt 728 16))
@@ -1277,6 +1277,6 @@ applicable agreement for further details.
 (junction (pt 320 200))
 (junction (pt 304 216))
 (junction (pt 288 232))
-(junction (pt 272 32))
 (junction (pt 16 408))
 (junction (pt 0 424))
+(junction (pt 272 32))

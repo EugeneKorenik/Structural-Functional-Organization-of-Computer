@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.716 ns
-From           : memenab
-To             : lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_kg91:auto_generated|ram_block1a125~porta_datain_reg0
+Actual Time    : -0.204 ns
+From           : CLK
+To             : Cache:inst3|Line:inst|String:inst|inst1
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 32.118 ns
-From           : CacheData:inst2|LineData:inst10|StringData:inst3|lpm_dff2:TAG_REG|lpm_ff:lpm_ff_component|dffs[7]
-To             : DATA_OUT[3]
+Actual Time    : 33.954 ns
+From           : Cache:inst3|Line:inst1|String:inst3|lpm_dff1:DATA_REG_4|lpm_ff:lpm_ff_component|dffs[1]
+To             : COMMAND_BUS[1]
 From Clock     : CLK
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 12.830 ns
-From           : memenab
-To             : DATA_BUS[2]
+Actual Time    : 6.659 ns
+From           : CLK
+To             : REG_1
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.649 ns
-From           : outenab
-To             : CacheData:inst2|LineData:inst10|StringData:inst3|lpm_dff1:DATA_REG_7|lpm_ff:lpm_ff_component|dffs[15]
+Actual Time    : 12.246 ns
+From           : CLK
+To             : Cache:inst3|Line:inst1|String:inst2|inst1
 From Clock     : --
 To Clock       : CLK
 Failed Paths   : 0
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'CLK'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 99.12 MHz ( period = 10.089 ns )
-From           : CacheData:inst2|LineData:inst7|StringData:inst3|IS_BUSY_REG
-To             : CacheData:inst2|LineData:inst7|StringData:inst3|IS_BUSY_REG
+Actual Time    : 21.16 MHz ( period = 47.270 ns )
+From           : Cache:inst3|Line:inst1|String:inst3|lpm_dff2:TAG_REG|lpm_ff:lpm_ff_component|dffs[3]
+To             : Cache:inst3|Line:inst2|String:inst|lpm_dff1:DATA_REG_7|lpm_ff:lpm_ff_component|dffs[10]
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 0
@@ -56,8 +56,8 @@ Type           : Clock Hold: 'CLK'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : lpm_counter2:inst1|lpm_counter:lpm_counter_component|cntr_43j:auto_generated|safe_q[13]
-To             : CacheData:inst2|LineData:inst|StringData:inst3|lpm_dff2:TAG_REG|lpm_ff:lpm_ff_component|dffs[8]
+From           : LoadCommandAlgorithm:inst7|lpm_counter7:inst9|lpm_counter:lpm_counter_component|cntr_pvi:auto_generated|safe_q[1]
+To             : LoadCommandAlgorithm:inst7|lpm_counter7:inst9|lpm_counter:lpm_counter_component|cntr_pvi:auto_generated|safe_q[1]
 From Clock     : CLK
 To Clock       : CLK
 Failed Paths   : 10000

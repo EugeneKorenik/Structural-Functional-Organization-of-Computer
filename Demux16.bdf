@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 904 1072 920)
+	(rect 1120 904 1296 920)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS0" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 920 1072 936)
+	(rect 1120 920 1296 936)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS1" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 936 1072 952)
+	(rect 1120 936 1296 952)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS2" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 952 1072 968)
+	(rect 1120 952 1296 968)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS3" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 968 1072 984)
+	(rect 1120 968 1296 984)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS4" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -134,7 +134,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 984 1072 1000)
+	(rect 1120 984 1296 1000)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS5" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -150,7 +150,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1000 1072 1016)
+	(rect 1120 1000 1296 1016)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS6" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -166,7 +166,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1016 1072 1032)
+	(rect 1120 1016 1296 1032)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS7" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -182,7 +182,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1032 1072 1048)
+	(rect 1120 1032 1296 1048)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS8" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -198,7 +198,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1048 1072 1064)
+	(rect 1120 1048 1296 1064)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS9" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -214,7 +214,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1064 1072 1080)
+	(rect 1120 1064 1296 1080)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS10" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -230,7 +230,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1080 1072 1096)
+	(rect 1120 1080 1296 1096)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS11" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -246,7 +246,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1096 1072 1112)
+	(rect 1120 1096 1296 1112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS12" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -262,7 +262,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1112 1072 1128)
+	(rect 1120 1112 1296 1128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS13" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -278,7 +278,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1128 1072 1144)
+	(rect 1120 1128 1296 1144)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS14" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -294,7 +294,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 896 1144 1072 1160)
+	(rect 1120 1144 1296 1160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS15" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
@@ -1165,7 +1165,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 752 880 896 1200)
+	(rect 976 880 1120 1200)
 	(text "AND16_1" (rect 5 0 59 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 304 31 316)(font "Arial" ))
 	(port
@@ -2228,20 +2228,6 @@ applicable agreement for further details.
 	(pt 1664 848)
 )
 (connector
-	(pt 752 912)
-	(pt 632 912)
-)
-(connector
-	(pt 752 928)
-	(pt 728 928)
-	(bus)
-)
-(connector
-	(pt 728 928)
-	(pt 728 848)
-	(bus)
-)
-(connector
 	(text "AN[15..0]" (rect 778 832 825 844)(font "Arial" ))
 	(pt 728 848)
 	(pt 816 848)
@@ -2251,6 +2237,20 @@ applicable agreement for further details.
 	(text "AN[15]" (rect 1632 809 1644 843)(font "Arial" )(vertical))
 	(pt 1648 712)
 	(pt 1648 848)
+)
+(connector
+	(pt 632 912)
+	(pt 976 912)
+)
+(connector
+	(pt 728 848)
+	(pt 728 928)
+	(bus)
+)
+(connector
+	(pt 728 928)
+	(pt 976 928)
+	(bus)
 )
 (junction (pt 304 200))
 (junction (pt 304 216))

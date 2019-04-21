@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 136 1104 152)
+	(rect 952 136 1128 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "W0" (rect 90 0 106 12)(font "Arial" ))
 	(pt 0 8)
@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 256 1104 272)
+	(rect 960 256 1136 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "W1" (rect 90 0 106 12)(font "Arial" ))
 	(pt 0 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 448 1104 464)
+	(rect 968 448 1144 464)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "W2" (rect 90 0 106 12)(font "Arial" ))
 	(pt 0 8)
@@ -118,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 928 648 1104 664)
+	(rect 968 648 1144 664)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "W3" (rect 90 0 106 12)(font "Arial" ))
 	(pt 0 8)
@@ -965,10 +965,6 @@ applicable agreement for further details.
 	(pt 848 136)
 )
 (connector
-	(pt 848 136)
-	(pt 848 256)
-)
-(connector
 	(pt 424 736)
 	(pt 424 728)
 	(bus)
@@ -1059,6 +1055,26 @@ applicable agreement for further details.
 	(text "BUSY[3]" (rect 434 712 477 724)(font "Arial" ))
 	(pt 616 728)
 	(pt 424 728)
+)
+(connector
+	(pt 848 136)
+	(pt 848 256)
+)
+(connector
+	(pt 928 656)
+	(pt 968 656)
+)
+(connector
+	(pt 928 456)
+	(pt 968 456)
+)
+(connector
+	(pt 928 264)
+	(pt 960 264)
+)
+(connector
+	(pt 928 144)
+	(pt 952 144)
 )
 (junction (pt 448 120))
 (junction (pt 504 160))

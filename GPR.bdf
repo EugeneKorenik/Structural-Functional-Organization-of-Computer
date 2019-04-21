@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 952 560 1135 576)
+	(rect 960 560 1143 576)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "DATA_OUT[15..0]" (rect 90 0 178 12)(font "Arial" ))
 	(pt 0 8)
@@ -1279,6 +1279,11 @@ applicable agreement for further details.
 (connector
 	(pt -328 -24)
 	(pt 320 -24)
+	(bus)
+)
+(connector
+	(pt 952 568)
+	(pt 960 568)
 	(bus)
 )
 (junction (pt 320 40))

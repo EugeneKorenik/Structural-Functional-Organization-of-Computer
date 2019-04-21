@@ -54,7 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 176 992 192)
+	(rect 1056 176 1232 192)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS0" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 192 992 208)
+	(rect 1056 192 1232 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS1" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -86,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 208 992 224)
+	(rect 1056 208 1232 224)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS2" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -102,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 816 224 992 240)
+	(rect 1056 224 1232 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ANS3" (rect 90 0 118 12)(font "Arial" ))
 	(pt 0 8)
@@ -297,7 +297,7 @@ applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 680 152 816 280)
+	(rect 920 152 1056 280)
 	(text "AND4_1" (rect 5 0 52 14)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 112 31 124)(font "Arial" ))
 	(port
@@ -508,23 +508,23 @@ applicable agreement for further details.
 	(pt 632 360)
 )
 (connector
+	(pt 632 200)
+	(pt 632 360)
+	(bus)
+)
+(connector
 	(pt 632 360)
 	(pt 632 424)
 	(bus)
 )
 (connector
-	(pt 680 184)
+	(pt 632 200)
+	(pt 920 200)
+	(bus)
+)
+(connector
 	(pt 296 184)
-)
-(connector
-	(pt 632 200)
-	(pt 632 360)
-	(bus)
-)
-(connector
-	(pt 632 200)
-	(pt 680 200)
-	(bus)
+	(pt 920 184)
 )
 (junction (pt 368 216))
 (junction (pt 472 256))
