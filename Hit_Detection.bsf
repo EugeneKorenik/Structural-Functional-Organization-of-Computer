@@ -107,6 +107,13 @@ applicable agreement for further details.
 		(text "HIT" (rect 210 43 227 57)(font "Arial" (font_size 8)))
 		(line (pt 248 48)(pt 232 48)(line_width 1))
 	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "HIT_BUS[3..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "HIT_BUS[3..0]" (rect 150 59 227 73)(font "Arial" (font_size 8)))
+		(line (pt 248 64)(pt 232 64)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 208)(line_width 1))
 	)

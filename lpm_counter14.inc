@@ -19,5 +19,6 @@ FUNCTION lpm_counter14
 )
 
 RETURNS (
+	cout,
 	q[3..0]
 );

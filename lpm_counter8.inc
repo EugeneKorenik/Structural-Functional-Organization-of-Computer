@@ -15,6 +15,7 @@
 
 FUNCTION lpm_counter8 
 (
+	clk_en,
 	clock
 )
 

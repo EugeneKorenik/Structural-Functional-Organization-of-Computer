@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 344 240)
+	(rect 16 16 344 272)
 	(text "LoadToCacheAlgorithm" (rect 5 0 137 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -54,9 +54,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 96)
 		(input)
-		(text "ROM/RAM" (rect 0 0 57 14)(font "Arial" (font_size 8)))
-		(text "ROM/RAM" (rect 21 91 78 105)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 1))
+		(text "Phase[1..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "Phase[1..0]" (rect 21 91 84 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
 		(pt 0 112)
@@ -142,7 +142,14 @@ applicable agreement for further details.
 		(text "RAM_CACHE_WRITE_ENABLE" (rect 134 187 307 201)(font "Arial" (font_size 8)))
 		(line (pt 328 192)(pt 312 192)(line_width 1))
 	)
+	(port
+		(pt 328 208)
+		(output)
+		(text "EndOfPhase" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "EndOfPhase" (rect 237 203 307 217)(font "Arial" (font_size 8)))
+		(line (pt 328 208)(pt 312 208)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 312 208)(line_width 1))
+		(rectangle (rect 16 16 312 240)(line_width 1))
 	)
 )

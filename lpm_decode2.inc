@@ -26,5 +26,6 @@ RETURNS (
 	eq2,
 	eq3,
 	eq4,
-	eq5
+	eq5,
+	eq6
 );

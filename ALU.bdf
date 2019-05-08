@@ -325,11 +325,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 288 -48)
-	(pt 288 -24)
-	(bus)
-)
-(connector
 	(pt 288 48)
 	(pt 360 48)
 	(bus)
@@ -346,27 +341,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 288 -24)
-	(pt 288 48)
-	(bus)
-)
-(connector
-	(pt 288 48)
-	(pt 288 160)
-	(bus)
-)
-(connector
-	(pt 288 160)
-	(pt 360 160)
-	(bus)
-)
-(connector
-	(text "<<__$DEF_ALIAS2952>>" (rect 272 228 284 351)(font "Arial" )(vertical)(invisible))
-	(pt 288 160)
-	(pt 288 288)
-	(bus)
-)
-(connector
 	(pt 272 -8)
 	(pt 248 -8)
 	(bus)
@@ -374,23 +348,6 @@ applicable agreement for further details.
 (connector
 	(pt 272 304)
 	(pt 360 304)
-	(bus)
-)
-(connector
-	(pt 272 -8)
-	(pt 272 176)
-	(bus)
-)
-(connector
-	(text "D[15..0]" (rect 256 260 268 300)(font "Arial" )(vertical))
-	(pt 272 176)
-	(pt 272 304)
-	(bus)
-)
-(connector
-	(text "D[3..0]" (rect 298 160 332 172)(font "Arial" ))
-	(pt 360 176)
-	(pt 272 176)
 	(bus)
 )
 (connector
@@ -475,7 +432,50 @@ applicable agreement for further details.
 	(pt 1000 168)
 	(bus)
 )
+(connector
+	(pt 360 160)
+	(pt 272 160)
+	(bus)
+)
+(connector
+	(pt 272 -8)
+	(pt 272 160)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS6540>>" (rect 256 260 268 383)(font "Arial" )(vertical)(invisible))
+	(pt 272 160)
+	(pt 272 304)
+	(bus)
+)
+(connector
+	(pt 288 -48)
+	(pt 288 -24)
+	(bus)
+)
+(connector
+	(pt 288 -24)
+	(pt 288 48)
+	(bus)
+)
+(connector
+	(pt 288 48)
+	(pt 288 176)
+	(bus)
+)
+(connector
+	(text "D[15..0]" (rect 272 249 284 289)(font "Arial" )(vertical))
+	(pt 288 176)
+	(pt 288 288)
+	(bus)
+)
+(connector
+	(text "D[3..0]" (rect 298 160 332 172)(font "Arial" ))
+	(pt 360 176)
+	(pt 288 176)
+	(bus)
+)
 (junction (pt 288 -24))
 (junction (pt 288 48))
-(junction (pt 288 160))
-(junction (pt 272 176))
+(junction (pt 272 160))
+(junction (pt 288 176))
